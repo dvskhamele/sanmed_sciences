@@ -1,0 +1,553 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <title>Narad</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="{%static 'js/extraEffects.js'%}"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gallery-section{
+  width: 100%;
+  padding: 20px 0;
+  background: white;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.gallery-section h1{
+  font-size: 30px;
+    font-weight: 400;
+  text-align: center;
+  
+  color: #000;
+}
+.gallery-section p{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+ .gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+ } 
+ .gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+@media screen and (max-width:960px){
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+@media screen and (max-width:720px){
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+.align-self-stretch{
+ align-items:center;
+}
+
+.footer_paragraph{
+   word-break: break-all;
+}
+
+.img_companylogo{
+  height: 40px;
+  width: 40px;
+}
+
+.Product_section{
+text-align: center;
+
+}
+
+.Product_heading{
+  color: #233142;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+.Safety_section{
+  text-align: center;
+}
+
+.safety_list{
+  padding: 0px 15px;
+}
+
+.accordion-section .panel-default > .panel-heading {
+    border-radius: 50px;
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 20px;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 2rem;
+    content: "\f106";
+    color: #233142;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    line-height: 1;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px)  {
+  .accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 15px;
+}
+.Product_heading {
+    color: #233142;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+p.accordion_paragraph {
+    font-size: 15px;
+}
+.img_heading {
+    color: #233142;
+    font-size: 15px !important;
+    font-weight: bold;
+    
+}
+.company_name_color1 {
+    color: #ff6600;
+    font-size: 15px !important;
+    font-weight: bold;
+
+
+}
+
+.company_name_color2 {
+    color: #233142;
+    font-size: 15px !important;
+    font-weight: bold;
+}}
+
+a:hover{
+  color: #233142 !important;
+}
+
+    .company_name_color1{
+    	color:#ff6600; 
+    	font-size:30px;
+        font-weight:bold;
+    }
+    .company_name_color2{
+    	color:#233142; 
+    	font-size:30px;
+        font-weight:bold;
+    }
+    .login_div{
+    	width: 100%;
+    }
+    .login_sign{
+    	float: right;
+    }
+    .login_btn{
+    	margin-left: auto;
+    }
+.front_img{
+    background-image: url(/static/images/betterorganization.jpg);
+    /* width: 100%; */
+    background-repeat: round;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.img_heading{
+	color: #233142;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 60px 0px;
+}
+
+.center_content{
+	margin-top: 20%;
+}
+
+.subscribe_paragraph{
+	font-size: 30px;
+}
+
+.img_slide{
+  height: 100%;
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-warning" style="background-color: transparent;">
+			 <a class="navbar-brand" href="/index">
+			 <img src="{% static 'images/companylogo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="narad-logo"> 
+             <span class="company_name_color1" style="">Sanmed</span>
+			 <span class="company_name_color2" style="">&nbsp;Narad </span>
+			</a> 
+			<!-- <button type="button" value="Login" class="btn btn-primary login_btn">login</button> -->
+    </nav>
+        
+    <div class="hero-wrap">
+      
+      <div class="container-fluid front_img" >
+          <center>
+          	<h1 class="img_heading"> Take your research efficiency to next level.</h1>
+            <button class="btn btn-primary container_btn">Login</button>
+          </center>
+          
+      </div>
+    </div>
+    
+      <br>
+      <div class="container">
+      
+            <div class="row">
+              
+              <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                  <div class="media block-6 services d-block text-center">
+                    <div class="d-flex justify-content-center"><div class="icon"><i class="fas fa-chart-line fa-3x"></i></div></div>
+                    <div class="media-body p-2 mt-3">
+                      <h3 class="heading"></h3>
+                      <p class="content_para"> Use AI-powered softbots who can be trained to dig your findings while you are away from your work. </p>
+                    </div>
+                  </div>   
+              </div>
+
+              <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                  <div class="d-flex justify-content-center"><div class="icon"><i class="fas fa-search-plus fa-3x"></i></div></div>
+                  <div class="media-body p-2 mt-3">
+                    <h3 class="heading"></h3>
+                    <p class="content_para">
+                        Let your virtual assistant find the papers relevant to your individual experiment, question or protocol. 
+                    </p>
+                  </div>
+                </div>      
+              </div>
+
+              
+
+              <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                  <div class="d-flex justify-content-center"><div class="icon"><i class="fas fa-vector-square fa-3x"></i></div></div>
+                  <div class="media-body p-2 mt-3">
+                    <h3 class="heading"></h3>
+                    <p class="content_para"> Automate the linking of your research questions, experiments, protocols and any PDF document.</p>
+                  </div>
+                </div>   
+              </div> 
+            </div> 
+            <br>
+      </div>
+  </section>
+    
+  <section class="container">
+
+  	<div class="row" style="border-style:solid;border-color:#ffcccc;background-color:#ffe6e6; background-image:url(~/narad/naradimages/labma.jpg)">
+	  <div class="col-md-4"> <img src="{% static 'images/betterorganization.jpg' %}" style="width:100%; border-radius:40px"> 
+	  </div>
+	  <div class="col-md-8">
+	  	 <center class="center_content">
+	  	 	<strong>Use Narad for</strong><br>
+		  	<b>Effective</b> organization of your research questions, protocols and experiments.
+		  	<a href="" class="btn btn-lg btn-primary-sm">Subscribe Today</a>
+	  	 </center>
+	  	  
+	  </div>
+	</div>
+  </section>
+
+  <section class="ftco-section" id="">
+      <div class="container">
+        <div class="Product_section"><h1 class="product_heading"></h1> </div>
+        <div class="row d-md-flex">
+          <div class="col-md-6 ftco-animate img about-image fadeInUp ftco-animated" style="background-image: url(/static/images/integration.jpg);">
+          </div>
+          
+          <div class="col-md-6 ftco-animate p-md-5 fadeInUp ftco-animated">
+                    <div>
+                    	
+                      <h2 class="mb-4">Use Narad for</h2>
+                      <p>Effective organization of your research questions, protocols and experiments.</p>
+                      <a href="" style="padding-left: 0px;" class="btn btn-lg btn-primary-sm">Subscribe Today</a>
+                      
+                    </div>
+           
+          </div>
+        </div>
+        <br>
+        <div class="row d-md-flex">
+          
+          <div class="col-md-6 ftco-animate p-md-5 fadeInUp ftco-animated">
+                    <div>
+                    	
+                      <h2 class="mb-4">Use Narad for</h2>
+                      <p>Secure access to your studies on any device, anywhere.</p>
+                      <a href="" style="padding-left: 0px;" class="btn btn-lg btn-primary-sm">  </a>
+                      
+                    </div>
+           
+          </div>
+          
+
+          <div class="col-md-6 ftco-animate img about-image fadeInUp ftco-animated" style="background-image: url(/static/images/secureaccess.jpg);">
+          </div>
+          
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <div class="">
+  	  <div style="max-width: 100%">
+  		  <img src="{% static 'images/FrightenedDearAlligator-small.gif' %}" class="img_slide">
+
+  	  </div>
+    </div>
+    <br>
+    
+	<center>
+	    <h2 class="mb-4">Use Narad for</h2>
+		  <p>
+		   Faster search and easy sharing of your data
+		  </p>
+		  <i class="fas fa-share fa-3x"></i>
+    </center>
+		    
+    <section class="ftco-section" id="Products_section">
+      <div class="container">
+        
+        <div class="row d-md-flex">
+          <div class="col-md-6 ftco-animate img about-image fadeInUp ftco-animated" style="background-image: url(/static/images/collaboration.jpg);">
+          </div>
+          
+          <div class="col-md-6 ftco-animate p-md-5 fadeInUp ftco-animated">
+                    <div>
+                    	
+                      
+                      <p> Productive collaborations by allowing group members to provide realtime comments on the observations .</p>
+                      <a href="" style="padding-left: 0px;" class="btn btn-lg btn-primary-sm"></a>
+                      
+                    </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <center>
+    	<h1 class="product_heading">100% Satisfaction Gauranteed</h1>
+    	<p>We are so confidant about the usefulness of Narad that we will refund the subscription fee if you cancel within 3 months of purchase. </p>
+    	<br>
+    	<button class="btn btn-primary">Subscribe Today</button>
+    	<br>
+      <br>
+      <br>
+    	<p class="subscribe_paragraph">To <strong style="color:#233142;">Accelerate</strong> your research.</p>
+    </center>
+    	
+    	
+    
+  
+ 
+    <div id="Contact_section" class="ftco-section contact-section ftco-degree-bg">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          
+          <div class="col-md-3">
+            <p class="footer_paragraph"><span>Address:  </span>
+                <span> 
+               370 Dixon Road,<br> Etobicoke, ON M9R1T2,<br> Canada
+                 </span> 
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="footer_paragraph"><span>Phone: </span> <a href="tel://1234567920"></a>+1 4372301684
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="footer_paragraph"><span>Email: </span> <a href="mailto:info@yoursite.com"></a>sandeep25789@gmail.com
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="footer_paragraph"><span>Website: </span> <a href="#"></a>https://www.sanmed.ca
+            </p>
+          </div>
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 pr-md-5">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6 pr-md-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.750225851911!2d-79.55802218511793!3d43.6949558577487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b30ac591d0759%3A0xbc0bc97d2ec46253!2sDixon%20Rd%2C%20Etobicoke%2C%20ON%20M9R%201T2%2C%20Canada!5e0!3m2!1sen!2sin!4v1578040846425!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        </div>
+      </div> 
+    </div>
+    
+<hr>
+ 
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/Sanmed-Narad-101575371360489">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="https://twitter.com/NaradOnCloud">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1" href="mailto://contact@sanmed.ca">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/company/sanmed-narad">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1" href="https://www.sanmed.ca">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+    <center><a class="btn btn-inline-sm" href="https://narad.sanmed.ca">Narad</a> <a class="btn btn-inline-sm" href="https://vexperiment.sanmed.ca">Vexperiment</a> <a class="btn btn-inline-sm" href="https://labma.sanmed.ca">Labma</a></center>
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020, Sanmed Sciences Inc. | 370 Dixon Road, Etobicoke, ON M9R1T2, Canada 
+    <a href="https://mdbootstrap.com/education/bootstrap/"> www.sanmadscience.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- Modal -->
+  
+
+
+  <script src="{%static 'js/jquery.min.js'%}"></script>
+  <script src="{%static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{%static 'js/popper.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'js/jquery.easing.1.3.js'%}"></script>
+  <script src="{%static 'js/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'js/jquery.stellar.min.js'%}"></script>
+  <script src="{%static 'js/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{%static 'js/aos.js'%}"></script>
+  <script src="{%static 'js/jquery.animateNumber.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap-datepicker.js'%}"></script>
+  <script src="{%static 'js/jquery.timepicker.js'%}"></script>
+  <script src="{%static 'js/scrollax.min.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{%static 'js/google-map.js'%}"></script>
+  <script src="{%static 'js/main.js'%}"></script>
+  
+
+  </body>
+</html>

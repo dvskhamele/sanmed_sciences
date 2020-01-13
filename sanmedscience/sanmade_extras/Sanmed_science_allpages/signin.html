@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Narad</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- iCheck -->
+  <link rel="stylesheet" href="dist/css/icheck-bootstrap.min.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body class="hold-transition login-page" style="background-image: url(dist/img/loginscreen.jpg);    background-size: cover;">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="#"><b style="color: #fff">Login</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    
+
+    <form action="/login?nextPage=http://www.scienchar.info&amp;requestID=32" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="tPF5kNKtYoaBpQo70akHVXR1d3s5a0AnLa8UUGldYIsMlXdGXbeHvLMnU5WItpCN">
+
+  <label for="id_username" class="form_whitetheme">Username:</label>
+  <input type="text" name="username" class="form-control" placeholder="Your Name" maxlength="60" required="" id="id_username">
+<label for="id_password" class="form_whitetheme">Password:</label>
+<input type="password" name="password" class="form-control" placeholder="Your Password" maxlength="60" required="" id="id_password">
+  <br>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+        <br>
+    </form><br>
+    <!-- /.social-auth-links -->
+    <a href="/signup" class="btn btn-primary-sm subscribe_now" style="border-radius:35px;border: 1px solid;"> Subscribe Now</a><br>
+    <a href="/recover" class="form_whitetheme">Recover username or password</a><br>
+    
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+
+
+
+<script src="dist/js/jquery.min.js"></script>
+
+<!-- Bootstrap 4 -->
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+
+</body>
+</html>

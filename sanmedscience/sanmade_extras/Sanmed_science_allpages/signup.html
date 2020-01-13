@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Narad</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- iCheck -->
+  <link rel="stylesheet" href="dist/css/icheck-bootstrap.min.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/form.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body class="register-page" style="min-height: 586.391px;">
+<div class="register-box">
+  <div class="register-logo">
+    
+  </div>
+
+  <div class="card">
+    <div class="card-body register-card-body">
+      
+      <h2 style="text-align: center;">Create your profile here</h2>
+      <form action="/signup" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="EHoV3QTxQM53j7jD63t8yU0gnjuZTEWoW2RKDJuhQ6nefe8c34n88IVC4lYCc3YO">
+
+  <label for="id_name">Name:</label>
+  <input type="text" name="name" class="form-control" placeholder="Your Name" maxlength="60" required="" id="id_name">
+<label for="id_email">Email:</label>
+<input type="text" name="email" class="form-control" placeholder="your email" required="" id="id_email">
+<label for="id_username">Username:</label>
+<input type="text" name="username" class="form-control" placeholder="Your Name" maxlength="60" required="" id="id_username">
+<label for="id_password">Password:</label>
+<input type="password" name="password" class="form-control" placeholder="Your Name" maxlength="60" required="" id="id_password">
+<label for="id_affiliation">Affiliation:</label>
+<input type="text" name="affiliation" class="form-control" placeholder="Institute/organization name" maxlength="60" required="" id="id_affiliation">
+<label for="id_designation">Designation:</label>
+<input type="text" name="designation" class="form-control" placeholder="your designation" maxlength="60" required="" id="id_designation">
+<label for="id_address_stNameAndNo">Address stnameandno:</label>
+<input type="text" name="address_stNameAndNo" class="form-control" placeholder="512 XYZ Colony" maxlength="60" required="" id="id_address_stNameAndNo">
+<label for="id_address_city">Address city:</label>
+<input type="text" name="address_city" class="form-control" placeholder="City" maxlength="60" required="" id="id_address_city">
+<label for="id_address_pincode">Address pincode:</label>
+<input type="text" name="address_pincode" class="form-control" placeholder="pincode/zipcode" maxlength="60" required="" id="id_address_pincode">
+<label for="id_address_country">Address country:</label>
+<input type="text" name="address_country" class="form-control" placeholder="country" maxlength="60" required="" id="id_address_country">
+<label for="id_dob">Dob:</label>
+<input type="text" name="dob" class="form-control" placeholder="Date of birth" maxlength="60" required="" id="id_dob">
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+      <div class="social-auth-links text-center">
+        <p>- OR -</p>
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fa fa-facebook"></i>
+          Sign up using Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fa fa-google-plus"></i>
+          Sign up using Google+
+        </a>
+      </div>
+      <button type="button" class="btn btn-primary">Login</button>
+      <a href="login.html" class="text-center">If already signup</a>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+</div>
+<!-- /.register-box -->
+
+
+
+<script src="dist/js/jquery.min.js"></script>
+
+<!-- Bootstrap 4 -->
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+
+</body>
+</html>
